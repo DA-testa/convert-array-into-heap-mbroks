@@ -8,7 +8,7 @@ def build_heap(data):
     for i in range(len(data)-1,-1,-1):
         while i>=0 and data[i]<data[int((i-1)/2)]:
             data[int((i-1)/2)], data[i] = data[i], data[int((i-1)/2)]
-            swaps.append(str(str(data[int((i-1)/2)])+ " "+str(data[i])))
+            swaps.append(str(str(int((i-1)/2))+ " "+str(i)))
             i = int((i-1)/2)
             
 
@@ -61,6 +61,6 @@ def main():
     for i in range(len(swaps)):
         print(swaps[i])
     #print(*data)
-
+    
 if __name__ == "__main__":
     main()
