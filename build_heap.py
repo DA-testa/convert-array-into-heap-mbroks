@@ -11,7 +11,6 @@ def build_heap(data):
             swaps.append(str(str(int((i-1)/2))+ " "+str(i)))
             i = int((i-1)/2)
             
-
     return swaps
 
 
