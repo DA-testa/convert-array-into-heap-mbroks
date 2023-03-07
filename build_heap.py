@@ -60,7 +60,7 @@ def main():
     #swaps = []
     for i in range(len(swaps)):
         print(swaps[i])
-    print(*data)
+    #print(*data)
 
 if __name__ == "__main__":
     main()
